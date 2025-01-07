@@ -30,6 +30,4 @@ fn main(){
         println!("index: {}, item: {}", index, item);
     }
 
-
-
 }
