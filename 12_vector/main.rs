@@ -30,4 +30,19 @@ fn main(){
         println!("index: {}, item: {}", index, item);
     }
 
+    println!("---------------------------------------");
+
+    let mut vector3: Vec<i32> = Vec::from([1, 2, 3]);
+
+    println!("is empty = {}", vector3.is_empty());                                 // 检查是否为空
+
+    vector3.insert(0, 0);                                           // 在指定索引插入数据，索引值不能大于 v 的长度
+
+    for (index, item) in &mut vector3.iter().enumerate() {
+        println!("index: {}, item: {}", index, item);
+    }
+
+    assert_eq!(vector3.remove(1), 1);                                              // 移除指定位置的元素并返回
+    assert_eq!(vector3.pop(), Some(3));                                            // 删除并返回 v 尾部的元素
+    
 }

@@ -8,6 +8,7 @@ use std::io;
 use std::io::Read;
 use std::fs::File;
 
+
 fn read_name_1() -> Result<String, io::Error>{
     let file = File::open("./src/hello.txt");
 
